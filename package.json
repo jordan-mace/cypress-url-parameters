@@ -1,0 +1,33 @@
+{
+  "name": "visual-locators",
+  "version": "1.0.0",
+  "description": "Visual locators for React testing via Cypress",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test",
+    "typescript": "tsc --project ./tsconfig.json",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordan-mace/visual-locators.git"
+  },
+  "types": "index.d.ts",
+  "keywords": [
+    "testing",
+    "cypress",
+    "locators"
+  ],
+  "author": "Jordan Mace <jordz98@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jordan-mace/visual-locators/issues"
+  },
+  "homepage": "https://github.com/jordan-mace/visual-locators#readme",
+  "devDependencies": {
+    "@semantic-release/npm": "^12.0.1",
+    "cypress": "^13.10.0",
+    "semantic-release": "^23.1.1",
+    "typescript": "^5.4.5"
+  }
+}
