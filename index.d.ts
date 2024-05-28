@@ -1,1 +1,1 @@
-export * from './src/parameters';
+export * from './parameters';

@@ -1,4 +1,4 @@
-import { setParameter, addParameter, addParameters } from "../src/parameters";
+import { setParameter, addParameter, addParameters } from "../parameters";
 
 describe("addParameter", () => {
     test("Adds single param", () => {
