@@ -2,7 +2,7 @@
   "name": "cypress-url-parameters",
   "version": "1.0.0",
   "description": "Adds URL parameter support for Cypress",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest --passWithNoTests --updateSnapshot --coverage",
     "typescript": "tsc --project ./tsconfig.json",
