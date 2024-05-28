@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 const params = new Map();
 
 export const addParameters = (originalFn, url, options) => {
