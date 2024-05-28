@@ -2,8 +2,7 @@
   "compilerOptions": {
     "lib": ["es2015", "dom"],
     "allowJs": true,
-    "composite": true,
-    "declarationMap": true,
+    "declaration": true,
     "types": [
       "cypress"
     ],
@@ -11,5 +10,5 @@
   },
   "include": [
     "src/*.ts",
-    "parameters.d.ts", "__tests__/*.ts"  ]
+    "__tests__/*.ts"  ]
 }
