@@ -1,5 +1,5 @@
 node_modules
 coverage
-dist
+lib
 src/**/*.js
 __tests__/**/*.js
