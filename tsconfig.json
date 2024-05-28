@@ -9,6 +9,7 @@
     "outDir": "dist"
   },
   "include": [
+    "index.d.ts",
     "src/*.ts",
     "__tests__/*.ts"  ]
 }
