@@ -1,2 +1,2 @@
-# visual-locators
-Visual locators for React application testing with Cypress
+# cypress-url-parameters
+Adds URL parameter support for Cypress

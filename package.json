@@ -1,7 +1,7 @@
 {
-  "name": "visual-locators",
+  "name": "cypress-url-parameters",
   "version": "1.0.0",
-  "description": "Visual locators for React testing via Cypress",
+  "description": "Adds URL parameter support for Cypress",
   "main": "src/index.js",
   "scripts": {
     "test": "test",
@@ -10,20 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jordan-mace/visual-locators.git"
+    "url": "git+https://github.com/jordan-mace/cypress-url-parameters.git"
   },
   "types": "index.d.ts",
   "keywords": [
-    "testing",
+    "url",
     "cypress",
-    "locators"
+    "parameters"
   ],
   "author": "Jordan Mace <jordz98@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jordan-mace/visual-locators/issues"
+    "url": "https://github.com/jordan-mace/cypress-url-parameters/issues"
   },
-  "homepage": "https://github.com/jordan-mace/visual-locators#readme",
+  "homepage": "https://github.com/jordan-mace/cypress-url-parameters#readme",
   "devDependencies": {
     "@semantic-release/npm": "^12.0.1",
     "cypress": "^13.10.0",
