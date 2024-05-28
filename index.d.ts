@@ -4,6 +4,3 @@ declare module "parameters" {
     export const setParameter: (name: string, value: string) => Map<string, string>;
     export const removeParameter: (name: string) => boolean;
 }
-declare module "index" {
-    export * from "parameters";
-}
