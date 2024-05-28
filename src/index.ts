@@ -1,8 +1,19 @@
-const getVisual = (subject: any, selector: string) => {
-  if (selector === undefined || selector === null) {
-    throw new Error('`selector` parameter cannot be empty. Got: ' + selector)
+const params: Map<string, string> = new Map();
+
+const addParams = (originalFn: any, url: string, options) => {
+  if (url === undefined || url === null) {
+    throw new Error('`url` parameter cannot be empty. Got: ' + url)
   }
-  
+
+  params.forEach((value, key) => {
+    url += (url.indexOf('?') != -1 ? '&' : '?') + key + '=' + value
+  })
 }
 
-Cypress.Commands.add('getVisual', { prevSubject: 'optional' }, getVisual)
+/*
+* Adds parameters to the stored list.
+* Each parameter in the stored list will be appended to all URLs during 'visit' calls.
+*/
+export const SetParam = (name: string, value: string) => params.set(name, value);
+export const RemoveParam = (name: string) => params.delete(name);
+Cypress.Commands.overwrite('visit', addParams)
