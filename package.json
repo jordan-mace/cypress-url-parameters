@@ -1,6 +1,6 @@
 {
   "name": "cypress-url-parameters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds URL parameter support for Cypress",
   "main": "dist/index.js",
   "scripts": {
