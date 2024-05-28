@@ -8,6 +8,5 @@
   },
   "include": [
     "src/*.ts",
-    "index.d.ts"
-  ]
+    "index.d.ts", "__tests__/*.ts"  ]
 }
