@@ -5,10 +5,9 @@
     "types": [
       "cypress"
     ],
-    "outDir": "lib"
   },
   "include": [
-    "index.d.ts", "index.ts", "parameters.ts"  
+    "index.d.ts", "index.js", "parameters.js"  
   ],
   "exclude": [
     "___tests___/**/*.ts"
