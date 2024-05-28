@@ -1,6 +1,6 @@
 {
   "name": "cypress-url-parameters",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Adds URL parameter support for Cypress",
   "main": "dist/index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "typescript": "tsc --project ./tsconfig.json",
     "semantic-release": "semantic-release"
   },
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jordan-mace/cypress-url-parameters.git"
