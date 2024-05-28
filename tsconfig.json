@@ -4,8 +4,7 @@
     "allowJs": true,
     "types": [
       "cypress"
-    ],
-    "outDir": "dist"
+    ]
   },
   "include": [
     "src/*.ts",
