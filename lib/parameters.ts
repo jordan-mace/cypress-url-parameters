@@ -10,6 +10,8 @@ export const addParameters = (originalFn, url, options) => {
   params.forEach((value, key) => {
     url = addParameter(key, value, url);
   })
+
+  originalFn(url, options);
 }
 
 export const addParameter = (key, value, url) => {
