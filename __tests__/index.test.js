@@ -1,25 +1,25 @@
-const setParameter = require("../lib/setParameterHandler");
-const removeParameter = require('../lib/removeParameterHandler');
-
-const CYPRESS_ENV_NAME = "UrlParameters";
+import { setString, removeString } from "../lib/utils/strings";
 
 describe("addParameter", () => {
     test("Adds single param", () => {
-        setParameter("token", "abcd");
-        expect(Cypress.env(CYPRESS_ENV_NAME) === "?token=abcd");
+        var val = setString("token", "abcd", 'https://www.google.com/');
+        expect(val === "https://www.google.com/?token=abcd");
     });
     test("Adds multiple params", () => {
-        setParameter('token', 'abcd');
-        setParameter('token2', 'fghk');
+        var val = setString("token", "abcd", 'https://www.google.com/');
+        val = setString("token2", "fghk", val);
+        val = setString('token2', 'fghk', val);
 
-        expect(Cypress.env(CYPRESS_ENV_NAME) === "?token=abcd&token2=fghk");
+        expect(val === "https://www.google.com/?token=abcd&token2=fghk");
     });
     test("Removes middle param", () => {
-        setParameter('token', 'abcd');
-        setParameter('token2', 'fghk');
-        setParameter('token3', 'asbcd');
-        expect(Cypress.env(CYPRESS_ENV_NAME) === "?token=abcd&token2=fghk&token3=asbcd");
-        removeParameter('token2');
-        expect(Cypress.env(CYPRESS_ENV_NAME)=== "?token=abcd&token3=asbcd")
+
+        var val = setString('token', 'abcd', "https://www.google.com/");
+        val = setString('token2', 'fghk', val);
+        val = setString('token3', 'asbcd', val);
+        expect(val === "https://www.google.com/?token=abcd&token2=fghk&token3=asbcd");
+
+        val = removeString('token2', val);
+        expect(val === "https://www.google.com/?token=abcd&token3=asbcd")
     });
 });

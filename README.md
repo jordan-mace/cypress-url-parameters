@@ -9,6 +9,8 @@ This package aims to fix that problem, by overwriting the `visit` command and ap
 ## Usage
 To add a parameter, use `cy.setParameter`. All subsequent `visit` calls will honor the query parameter.
 ```
+import 'cypress-url-parameters'
+
 cy.setParameter('token', 'XXXXX')
 cy.visit('https://example.cypress.io/');
 ```
@@ -17,6 +19,8 @@ If you need to update a parameter, simple use `setParameter` with the same param
 
 To remove a parameter, use `removeParameter`
 ```
+import 'cypress-url-parameters'
+
 cy.setParameter('token', 'XXXXX');
 cy.visit('https://example.cypress.io/');
 
