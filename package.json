@@ -5,6 +5,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "jest",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "typescript": "tsc --project ./tsconfig.json",
     "semantic-release": "semantic-release"
   },
