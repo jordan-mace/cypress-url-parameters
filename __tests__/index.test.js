@@ -1,4 +1,5 @@
-import { setString, removeString } from "../lib/utils/strings";
+const setString = require('../lib/utils/setString');
+const removeString = require('../lib/utils/removeString');
 
 describe("addParameter", () => {
     test("Adds single param", () => {
