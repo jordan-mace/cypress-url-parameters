@@ -1,5 +1,5 @@
 {
-  "name": "cypress-url-parameters",
+  "name": "@jordan-mace/cypress-url-parameters",
   "version": "1.0.20",
   "description": "Adds URL parameter support for Cypress",
   "main": "./lib/index.js",
